@@ -44,3 +44,52 @@ table {
 
 
 /*Style*/
+
+body{
+	font-family: arial;
+	font-size: 14px;
+
+}
+
+.header{
+border-bottom: 1px solid black;
+padding: 10px;
+}
+
+.container{
+	width: 1200px;
+	margin: 80px auto;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.flex-container{
+	display: flex;
+	padding: 0 20px;
+}
+
+.flex-container .item{
+	text-align: center;
+	border: 1px solid black;
+	padding: 7px 15px;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 10px;
+}
+
+.flex-container a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.flex-container .space{
+	margin-left: auto;
+}
+
+.flex-img img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
