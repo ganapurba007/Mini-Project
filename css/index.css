@@ -5,6 +5,7 @@
 	font-family: arial;
 }
 
+/*<---- Style Header ---->*/
 .header{
 	width: 100%;
 	padding: 10px;
@@ -16,6 +17,9 @@
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .header img{
