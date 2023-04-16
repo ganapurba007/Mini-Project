@@ -37,7 +37,12 @@
 }
 
 
+
+
 /*<---- Style Main ---->*/
+main{
+	border-bottom: 1px solid black;
+}
 .container{
 	margin: 0 auto;
 	max-width: 1280px;
@@ -62,15 +67,13 @@
 	width: 100%;
 }
 
-/*<---- Syle Banner ---->*/
-/* Slideshow container */
+/*<---- Style Banner ---->*/
 .slideshow-container {
   max-width: 1280px;
   position: relative;
   margin: auto;
 }
 
-/* Size img */
 .slideshow-container img{
 	margin-top: 20px;
 	max-width: 1280px;
@@ -82,7 +85,6 @@
 	opacity: 0.3;
 }
 
-/* Caption text */
 .text {
 	color: #000000;
 	padding: 10px 30px;
@@ -107,9 +109,9 @@
 	line-height: 24px;
 }
 
-/* The dots/bullets/indicators */
 .dots{
 	text-align: center;
+	margin-bottom: 15px;
 
 }
 .dot {
@@ -126,7 +128,6 @@
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -138,8 +139,6 @@
 }
 
 
-
-/* On smaller screens, decrease text size */
 @media (max-width : 600px){
 	.navbar{
 		flex-direction: column;
