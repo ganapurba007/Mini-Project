@@ -92,39 +92,58 @@
 			</section>
 
 			<section class="message">
-				<div class="message-container">
-					<h1>Message Us</h1>
-					<form name="message-form" onsubmit="return validateForm()">
-						Nama : 
-						<input type="text" name="full-name" required>
-						<br>
+			    <h1>Message Us</h1>
+			    <div class="message-container">
+			        <form name="message-form" class="input-form" onsubmit="return validateForm()">
+			            <ul class="wrapper">
+			                <li class="form-row">
+			                    <label for="full-name">Nama :</label>
+			                    <input type="text" name="full-name" required>
+			                </li>
 
-						Tanggal Lahir : 
-						<input type="date" name="birth-date" required>
-						<br>
+			                <li class="form-row">
+			                    <label for="birth-date">Tanggal Lahir :</label>
+			                    <input type="date" name="birth-date" required class="date">
+			                </li>
 
-						Jenis Kelamin : 
-						<input type="radio" name="gender" id="male" value="Laki-laki" required>
-						<label for="male">Laki-laki</label>
+			                <li class="form-row">
+			                    <label for="gender">Jenis Kelamin :</label>
+			                    <input type="radio" name="gender" id="male" class="radio" value="Laki-laki" required>
+			                    <label for="male">Laki-laki</label>
+			                    <input type="radio" name="gender" id="female" class="radio" value="Perempuan" required>
+			                    <label for="female">Perempuan</label> 
+			                </li>
 
-						<input type="radio" name="gender" id="female" value="Perempuan" required>
-						<label for="female">Perempuan</label> 
-						<br>
+			                <li class="form-row">
+			                    <label for="messages">Pesan :</label>
+			                    <textarea placeholder="Pesan" name="messages" class="pesan" required></textarea> 
+			                </li>
 
-						Pesan :
-						<textarea placeholder="Pesan" name="messages" required></textarea> 
-						<br>
+			                <li class="form-row">
+			                    <input type="submit" value="Submit" class="submit">
+			                </li>
+			            </ul>
+			        </form>
 
-						<input type="submit" value="submit">
-					</form>
-
-					<div class="output-form">
-						<p>Nama : <span id="sender-full-name"></span> </p>
-						<p>Tanggal lahir : <span id="sender-birth-date"></span> </p>
-						<p>Jenis Kelamin : <span id="sender-gender"></span> </p>
-						<p>pesan : <span id="sender-messages"></span> </p>
-					</div>
-				</div>
+			        <div class="output-form">
+			        	<div class="output-row">
+			        		<span id="sender-current-date"></span>
+			        	</div>
+			        	<br>
+			            <div class="output-row">
+			                <span id="sender-full-name"></span>
+			            </div>
+			            <div class="output-row">
+			                <span id="sender-birth-date"></span>
+			            </div>
+			            <div class="output-row">
+			                <span id="sender-gender"></span>
+			            </div>
+			            <div class="output-row">
+			                <span id="sender-messages"></span>
+			            </div>
+			        </div>
+			    </div>
 			</section>
 			
 		</div>

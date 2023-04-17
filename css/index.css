@@ -215,30 +215,65 @@
 
 
 /*Style Message Us*/
-.message{
-	border-bottom: 1px solid black;
+.message {
+    border-bottom: 1px solid black;
 }
 
-.message-container{
-	max-width: 1280px;
-	margin: 0 8%;
-	position: relative;
-	overflow: auto;
+.message h1 {
+    margin: 20px 8%;
 }
 
-.message-container h1{
-	margin-top: 20px;
-	margin-bottom: 20px;
+.message-container {
+    max-width: 1280px;
+    margin: 0 8%;
+    display: flex;
+    justify-content: space-between;
 }
 
-form{
-	width: 50%;
-	float: left;
+.input-form {
+    width: 48%;
 }
 
-.output-form{
-	width: 50%;
-	float: right;
+.output-form {
+    width: 48%;
+    border: 1px solid black;
+    padding: 20px;
+    height: 175px;
+    font-size: 14px;
 }
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row > label {
+    flex: 0 0 30%;
+    text-align: right;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.form-row > input, 
+.form-row > textarea {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.radio {
+    margin-left: 20px;
+}
+
+.submit {
+    display: block;
+}
+
+.output-row {
+    display: flex;
+    line-height: 20px;
+  }
+
 
 

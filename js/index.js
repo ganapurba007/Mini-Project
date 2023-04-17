@@ -20,7 +20,6 @@ function showSlides() {
 }
 
 function validateForm() {
-
   var name = document.forms['message-form']['full-name'].value;
   var date = document.forms['message-form']['birth-date'].value;
   var gender = document.forms['message-form']['gender'].value;
@@ -37,8 +36,10 @@ function validateForm() {
 }
 
   function setSenderUI(name, date, gender, messages){
-  document.getElementById('sender-full-name').innerHTML = name;
-  document.getElementById('sender-birth-date').innerHTML = date;
-  document.getElementById('sender-gender').innerHTML = gender;
-  document.getElementById('sender-messages').innerHTML = messages;
+  var current = new Date();
+  document.getElementById('sender-current-date').innerHTML = `<b>Current Date</b> : ${current}`;
+  document.getElementById('sender-full-name').innerHTML = `<b>Nama</b> : ${name}`;
+  document.getElementById('sender-birth-date').innerHTML = `<b>Tanggal Lahir</b> : ${date}`;
+  document.getElementById('sender-gender').innerHTML = `<b>Jenis Kelamin</b> : ${gender}`;
+  document.getElementById('sender-messages').innerHTML = `<b>Pesan</b> : ${messages}`;
   }
