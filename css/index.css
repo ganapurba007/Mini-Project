@@ -180,5 +180,36 @@
 
 /*Syle Facilitation*/
 .facil{
-	margin: 10px 50px;
+	border-bottom: 1px solid black;
 }
+
+.facil-container{
+	margin: 0 8%;
+}
+
+.facil h1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.facil-list{;
+	margin-bottom: 20px;
+	gap: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.facil-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.facil-p{
+	text-align: center;
+}
+
