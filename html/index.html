@@ -92,11 +92,44 @@
 			</section>
 
 			<section class="message">
-				<h1>Message Us</h1>
+				<div class="message-container">
+					<h1>Message Us</h1>
+					<form name="message-form" onsubmit="return validateForm()">
+						Nama : 
+						<input type="text" name="full-name" required>
+						<br>
+
+						Tanggal Lahir : 
+						<input type="date" name="birth-date" required>
+						<br>
+
+						Jenis Kelamin : 
+						<input type="radio" name="gender" id="male" value="Laki-laki" required>
+						<label for="male">Laki-laki</label>
+
+						<input type="radio" name="gender" id="female" value="Perempuan" required>
+						<label for="female">Perempuan</label> 
+						<br>
+
+						Pesan :
+						<textarea placeholder="Pesan" name="message" required></textarea> 
+						<br>
+
+						<input type="submit" value="submit">
+					</form>
+
+					<div class="output-form">
+						<p>Nama : <span id="sender-full-name"></span> </p>
+						<p>Tanggal lahir : <span id="sender-birth-date"></span> </p>
+						<p>Jenis Kelamin : <span id="sender-gender"></span> </p>
+						<p>pesan : <span id="sender-messages"></span> </p>
+					</div>
+				</div>
 			</section>
 			
 		</div>
 	</main>
 	<script src="../js/index.js" type="text/javascript"></script>
+	<script src="../js/form.js" type="text/javascript"></script>
 </body>
 </html> 
