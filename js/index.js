@@ -19,3 +19,26 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+function validateForm() {
+
+  var name = document.forms['message-form']['full-name'].value;
+  var date = document.forms['message-form']['birth-date'].value;
+  var gender = document.forms['message-form']['gender'].value;
+  var messages = document.forms['message-form']['messages'].value;
+  
+
+  if (name == "" || date == "" || gender == "" || messages == ""){
+    alert('Input tidak boleh kosong');
+    return false;
+  }
+
+  setSenderUI(name, date, gender, messages);
+  return false;
+}
+
+  function setSenderUI(name, date, gender, messages){
+  document.getElementById('sender-full-name').innerHTML = name;
+  document.getElementById('sender-birth-date').innerHTML = date;
+  document.getElementById('sender-gender').innerHTML = gender;
+  document.getElementById('sender-messages').innerHTML = messages;
+  }
