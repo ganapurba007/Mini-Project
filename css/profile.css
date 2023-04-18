@@ -1,0 +1,116 @@
+    /* Styling untuk kontainer */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Styling untuk gambar profil */
+    .profile-pic {
+      display: block;
+      margin: 0 auto;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+
+    /* Styling untuk nama */
+    .name {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Styling untuk alamat */
+    .address {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Styling untuk kontak */
+    .contact {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Styling untuk ikon kontak */
+    .contact-email,
+    .contact-wa,
+    .contact-ig,
+    .contact-linkedin{
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      margin-right: 10px;
+      margin-top: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .contact-email{
+      background-image: url(../assets/img/email.png);
+    }
+
+    .contact-wa{
+      background-image: url(../assets/img/wa.png);
+    }
+
+    .contact-ig{
+      background-image: url(../assets/img/ig.png);
+    }
+
+    .contact-linkedin{
+      background-image: url(../assets/img/linkedin.png);
+    }
+
+    /* Styling untuk tautan kontak */
+    .contact-link {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #000;
+    }
+
+
+    /* Styling untuk button kembali */
+    .back{
+      margin: 30px 42%;
+      
+    }
+
+    .back button{
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+
+
+    /* Styling untuk mobile */
+    @media only screen and (max-width: 600px) {
+      .profile-pic {
+        max-width: 150px;
+      }
+
+      .name {
+        font-size: 24px;
+      }
+
+      .address {
+        font-size: 14px;
+      }
+
+      .contact {
+        font-size: 14px;
+      }
+
+      .contact-link {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
