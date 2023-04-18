@@ -78,7 +78,7 @@
 
     /* Styling untuk button kembali */
     .back{
-      margin: 30px 42%;
+      margin: 30px 45%;
       
     }
 
@@ -112,5 +112,9 @@
       .contact-link {
         display: block;
         margin-bottom: 20px;
+      }
+
+      .back{
+        margin: 30px 40%;
       }
     }
