@@ -143,40 +143,6 @@
 }
 
 
-@media (max-width : 600px){
-	.navbar{
-		flex-direction: column;
-	}
-
-	.menu{
-		margin-top: 10px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		text-align: center;
-	}
-
-	.dot{
-		height: 10px;
-		width: 10px;
-	}
-
-	.text p,
-	.text ol{
-		font-size: 10px;
-	}
-
-	.text h2{
-		font-size: 16px;
-	}
-
-	.text h3{
-		font-size: 12px;
-	}
-
-}
-
-
 
 /*Syle Facilitation*/
 .facil{
@@ -281,9 +247,128 @@
   .footer{
   	margin: 10px;
   	height: 20px;
-  	padding: 5px 5px 10px 0;
+  	padding: 5px 5px 10px;
   	text-align: right;
   }
 
 
 
+/*Responsive*/
+
+/*Responsive Desktop*/
+@media only screen and (max-width :1044px){
+	.form-row label{
+		font-size: 12px;
+	}
+
+	.form-row > label {
+	    flex: 0 0 30%;
+	    text-align: right;
+	    margin-right: 0;
+	    text-align: left;
+	}
+
+	.form-row > input, 
+	.form-row > textarea {
+	    flex: 1;
+	    margin-left: 15px;
+	    font-size: 12px;
+    }
+
+    .radio {
+	    margin-left: 0;
+	}*/
+
+	.output-row {
+	    display: flex;
+	    line-height: 10px;
+	    font-size: 50px;
+	}
+}
+
+/*Reponsive Mobile*/
+@media only screen and (max-width : 600px){
+	.navbar{
+		flex-direction: column;
+	}
+
+	h1{
+		font-size: 1.2em;
+	}
+
+	h2{
+		font-size: .7em;
+	}
+
+	h3{
+		font-size: .4em;
+	}
+
+	.hero-container p{
+		font-size: 14px;
+	}
+
+	.menu{
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+
+	.dot{
+		height: 10px;
+		width: 10px;
+	}
+
+	.text p,
+	.text ol{
+		font-size: 10px;
+	}
+
+	.text h2{
+		font-size: 16px;
+	}
+
+	.text h3{
+		font-size: 12px;
+	}
+
+	.facil-list p{
+		font-size: 14px;
+	}
+
+	.facil-list img{
+		width: 80px;
+		height: 80px;
+	} 
+
+	.form-row label{
+		font-size: 10px;
+	}
+
+	.form-row > label {
+	    flex: 0 0 20%;
+	    text-align: right;
+	    margin-right: 0;
+	    text-align: left;
+	}
+
+	.form-row > input, 
+	.form-row > textarea {
+	    flex: 1;
+	    margin-left: 10px;
+	    font-size: 10px;
+    }
+
+    .radio {
+	    margin-left: 10px;
+	}
+
+	.output-row {
+	    display: flex;
+	    line-height: 15px;
+	    font-size: 10px;
+	}
+
+}
