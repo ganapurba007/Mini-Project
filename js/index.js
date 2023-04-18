@@ -1,3 +1,14 @@
+var start = '';
+while (start == '') {
+  start = prompt("Masukkan Nama Anda : ");
+  if (start == '') {
+    alert("Nama tidak boleh kosong !");
+  }
+}
+
+document.getElementById("name").innerHTML = start;
+
+
 let slideIndex = 0;
 showSlides();
 
